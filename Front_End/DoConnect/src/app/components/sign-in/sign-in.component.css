@@ -1,0 +1,27 @@
+.bgImage{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../../../assets/img/back-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+
+}
+
+.m-p-0{
+    margin: 0;
+    padding: 0;
+}
+
+.f-bottom{
+    left: 0;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.w100{
+    width: 100%;
+}

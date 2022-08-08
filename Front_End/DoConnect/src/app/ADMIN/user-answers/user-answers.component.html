@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <h5 class="text-dark p-3">User answer request approval</h5>
+        <div class="col-lg-12">
+            <mat-card class="mb-3 mt-4" *ngFor="let que of myQuestions">
+                <mat-card-content>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h6 class="text-dark"><strong>Question.</strong>{{que.question}}</h6>
+                                <div class="d-flex">
+                                    <p class="text-dark mx-2"><small><strong>Created By - </strong>{{que.user.username}}</small></p>
+                                    <p class="text-dark mx-2"><small><strong>Date - </strong>{{que.createdDate}}</small></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <a [routerLink]="'/admin-dashboard/question-answers/' + que.id" class="btn btn-primary btn-sm">View all answers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

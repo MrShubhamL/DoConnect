@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <mat-card class="mt-5">
+                <mat-card-content>
+                    <form class="row g-3" (ngSubmit)="postSubmit()">
+                        <div class="col-lg-12">
+                            <label for="" class="form-label">Post URL</label>
+                            <input [(ngModel)]="post.pic" name="pic" type="text" placeholder="Paste post URL link" class="form-control">
+                            <a href="https://unsplash.com/" class="nav-link text-info p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                              </svg> Get more post</a>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="" class="form-label">Post Description</label>
+                            <textarea [(ngModel)]="post.description" name="description"  cols="10" rows="10" placeholder="Enter post description" class="form-control"></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            <button class="btn btn-success" type="submit">POST</button>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

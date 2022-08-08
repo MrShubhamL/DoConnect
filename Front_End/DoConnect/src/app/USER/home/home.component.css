@@ -1,0 +1,12 @@
+.imgSize{
+    border-radius: 100%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.overlap{
+    display: flex;
+    position: relative;
+}

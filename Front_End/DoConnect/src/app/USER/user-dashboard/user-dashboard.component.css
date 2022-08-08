@@ -1,0 +1,97 @@
+.m-p-0{
+    margin: 0;
+    padding: 0;
+}
+
+
+.openButton{
+    background-color: rgb(35, 50, 91);
+    color: #fff;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280;
+}
+.chat-popup{
+    display: none;
+    position: fixed;
+
+    bottom: 20px;
+    right: 25px;
+    z-index: 9;
+}
+
+.form-container{
+    max-width: 600px;
+    /* padding: 10px; */
+    background: rgb(42, 42, 85);
+}
+.form-container textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+   
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+.form-container textarea:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btnn{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 8.0;
+}
+
+
+.chat-1{
+    background-color: #3f3091;
+    border: 1px solid white;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.chat-2{
+    background-color: #24174a;
+    border: 1px solid white;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.chatBox{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.636),rgba(0, 0, 0, 0.74)), url("../../../assets/img/chatting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgColor{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.636),rgba(0, 0, 0, 0.74));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.scroll {
+
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+  }

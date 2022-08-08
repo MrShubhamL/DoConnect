@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <mat-card class="mt-5" *ngIf="!show">
+                <h6 class="text-success">OTP has been successfully send.</h6>
+                <mat-card-content>
+                    <form class="row -g-3" (ngSubmit)="verifyOTP(sendForm)" #sendForm="ngForm">
+                        <div class="col-lg-12">
+                            <label for="otp" class="form-label">Enter OTP</label>
+                            <input placeholder="Please enter correct otp" name="otp" id="input-otp" ngModel
+                            type="password" class="form-control">
+                        </div>
+                        <div class="col-lg-12">
+                            <button class="btn btn-success mt-3" type="submit">Verify OTP</button>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+
+            <div class="p-5 mt-5 d-flex" *ngIf="show">
+                <h4 class="text-center"><strong>Please wait.... OTP is sending to admin...</strong></h4>
+                <p class="text-center mx-3"><mat-spinner class="text-dark" diameter="40"></mat-spinner></p>
+            </div>
+        </div>
+    </div>
+</div>
